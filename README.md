@@ -24,6 +24,7 @@ jobs:
 
 - `command` - The command name to copy the issue. Default `'duplicate'`.
 - `who` - Who can duplicate the issue. Default `'author'` only the author of the issue can duplicate it. Or any other values indicate any one can duplicate the issue.
+- `extras` - Additional information appended to the duplicated issue body. Default `'> This issue was copied from [#{{ issueNumber }}]({{ issueUrl }}) by @{{ author }}.'`.
 
 ## License
 

@@ -1,5 +1,6 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
+import mustache from 'mustache'
 import { Util } from './util'
 
 export namespace Action {
@@ -41,20 +42,27 @@ export namespace Action {
         return
       }
 
-      const issueCopy = {
-        ...context.repo,
-        title: issue.title,
-        body: `${issue.body}\n\n> Copy of [#${issue.number}](${issue.html_url})`,
-        milestone: issue.milestone ? issue.milestone.number : null,
-        labels: issue.labels,
+      let body = core.getInput('extras')
+      if (body) {
+        body = mustache.render(body, {
+          author: comment.user.login,
+          issueNumber: issue.number,
+          issueUrl: issue.html_url,
+        })
       }
 
-      if (issueCopy.milestone === null) {
-        delete issueCopy.milestone
+      if (issue.body) {
+        body = issue.body + (body ? `\n\n${body}` : '')
       }
 
       const octokit = Util.getOctokit()
-      await octokit.issues.create(issueCopy)
+      await octokit.issues.create({
+        ...context.repo,
+        body,
+        title: issue.title,
+        labels: issue.labels,
+        milestone: issue.milestone ? issue.milestone.number : undefined,
+      })
     } catch (e) {
       core.error(e)
       core.setFailed(e.message)
