@@ -2,6 +2,14 @@
 
 A GitHub Action to create a full copy of issue with a single command.
 
+Use the default `/duplicate` command to duplicate an issue:
+
+![command](https://github.com/bubkoo/duplicate-issue/blob/master/screenshots/command.jpg?raw=true)
+
+The duplicated issue:
+
+![duplicated](https://github.com/bubkoo/duplicate-issue/blob/master/screenshots/duplicated.jpg?raw=true)
+
 ## Usage
 
 Create `.github/workflows/duplicate-issue.yml` in the default branch:
