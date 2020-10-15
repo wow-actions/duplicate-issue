@@ -1,0 +1,24 @@
+name: Duplicate Issue
+description: Create a full copy of issue with a single command.
+author: bubkoo <bubkoo.wy@gmail.com>
+
+inputs:
+  GITHUB_TOKEN:
+    description: Your GitHub token for authentication.
+    required: true
+  command:
+    description: Command name to copy the issue.
+    default: duplicate
+    required: false
+  who:
+    description: Who can duplicate the issue.
+    default: author
+    required: false
+
+runs:
+  using: node12
+  main: dist/index.js
+
+branding:
+  icon: copy
+  color: purple # gray-dark purple red orange green blue yellow black white
