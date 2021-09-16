@@ -1,0 +1,11 @@
+name: Duplicate
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: bubkoo/duplicate-issue@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
