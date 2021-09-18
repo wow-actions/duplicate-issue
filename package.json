@@ -1,7 +1,7 @@
 {
   "name": "duplicate-issue",
   "description": "Creates a full copy of issue with a single command.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "files": [
     "dist",
