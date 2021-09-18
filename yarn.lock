@@ -7,17 +7,17 @@
   resolved "https://registry.npmjs.org/@actions/core/-/core-1.5.0.tgz#885b864700001a1b9a6fba247833a036e75ad9d3"
   integrity sha512-eDOLH1Nq9zh+PJlYLqEMkS/jLQxhksPNmUGNBHfa4G+tQmnIhzpctxmchETtVGyBOvXgOVVpYuE40+eS4cUnwQ==
 
-"@actions/github@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/@actions/github/-/github-4.0.0.tgz#d520483151a2bf5d2dc9cd0f20f9ac3a2e458816"
-  integrity sha512-Ej/Y2E+VV6sR9X7pWL5F3VgEWrABaT292DRqRU6R4hnQjPtC/zD3nagxVdXWiRQvYDh8kHXo7IDmG42eJ/dOMA==
+"@actions/github@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/@actions/github/-/github-5.0.0.tgz#1754127976c50bd88b2e905f10d204d76d1472f8"
+  integrity sha512-QvE9eAAfEsS+yOOk0cylLBIO/d6WyWIOvsxxzdrPFaud39G6BOkUwScXZn1iBzQzHyu9SBkkLSWlohDWdsasAQ==
   dependencies:
-    "@actions/http-client" "^1.0.8"
-    "@octokit/core" "^3.0.0"
-    "@octokit/plugin-paginate-rest" "^2.2.3"
-    "@octokit/plugin-rest-endpoint-methods" "^4.0.0"
+    "@actions/http-client" "^1.0.11"
+    "@octokit/core" "^3.4.0"
+    "@octokit/plugin-paginate-rest" "^2.13.3"
+    "@octokit/plugin-rest-endpoint-methods" "^5.1.1"
 
-"@actions/http-client@^1.0.8":
+"@actions/http-client@^1.0.11":
   version "1.0.11"
   resolved "https://registry.npmjs.org/@actions/http-client/-/http-client-1.0.11.tgz#c58b12e9aa8b159ee39e7dd6cbd0e91d905633c0"
   integrity sha512-VRYHGQV1rqnROJqdMvGUbY/Kn8vriQe/F9HR2AlYHzmKuM/p3kjNuXhmdBfcVgsvRWTz5C5XW5xvndZrVBuAYg==
@@ -247,7 +247,7 @@
   dependencies:
     "@octokit/types" "^6.0.3"
 
-"@octokit/core@^3.0.0":
+"@octokit/core@^3.4.0":
   version "3.5.1"
   resolved "https://registry.npmjs.org/@octokit/core/-/core-3.5.1.tgz#8601ceeb1ec0e1b1b8217b960a413ed8e947809b"
   integrity sha512-omncwpLVxMP+GLpLPgeGJBF6IWJFjXDS5flY5VbppePYX9XehevbDykRH9PdCdvqt9TS5AOTiDide7h0qrkHjw==
@@ -283,19 +283,19 @@
   resolved "https://registry.npmjs.org/@octokit/openapi-types/-/openapi-types-10.2.2.tgz#6c1c839d7d169feabaf1d2a69c79439c75d979cd"
   integrity sha512-EVcXQ+ZrC04cg17AMg1ofocWMxHDn17cB66ZHgYc0eUwjFtxS0oBzkyw2VqIrHBwVgtfoYrq1WMQfQmMjUwthw==
 
-"@octokit/plugin-paginate-rest@^2.2.3":
+"@octokit/plugin-paginate-rest@^2.13.3":
   version "2.16.3"
   resolved "https://registry.npmjs.org/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-2.16.3.tgz#6dbf74a12a53e04da6ca731d4c93f20c0b5c6fe9"
   integrity sha512-kdc65UEsqze/9fCISq6BxLzeB9qf0vKvKojIfzgwf4tEF+Wy6c9dXnPFE6vgpoDFB1Z5Jek5WFVU6vL1w22+Iw==
   dependencies:
     "@octokit/types" "^6.28.1"
 
-"@octokit/plugin-rest-endpoint-methods@^4.0.0":
-  version "4.15.1"
-  resolved "https://registry.npmjs.org/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-4.15.1.tgz#91a064bee99d0ffcef74a04357e1cf15c27d1cd0"
-  integrity sha512-4gQg4ySoW7ktKB0Mf38fHzcSffVZd6mT5deJQtpqkuPuAqzlED5AJTeW8Uk7dPRn7KaOlWcXB0MedTFJU1j4qA==
+"@octokit/plugin-rest-endpoint-methods@^5.1.1":
+  version "5.10.4"
+  resolved "https://registry.npmjs.org/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-5.10.4.tgz#97e85eb7375e30b9bf193894670f9da205e79408"
+  integrity sha512-Dh+EAMCYR9RUHwQChH94Skl0lM8Fh99auT8ggck/xTzjJrwVzvsd0YH68oRPqp/HxICzmUjLfaQ9sy1o1sfIiA==
   dependencies:
-    "@octokit/types" "^6.13.0"
+    "@octokit/types" "^6.28.1"
     deprecation "^2.3.1"
 
 "@octokit/request-error@^2.0.5", "@octokit/request-error@^2.1.0":
@@ -319,17 +319,12 @@
     node-fetch "^2.6.1"
     universal-user-agent "^6.0.0"
 
-"@octokit/types@^6.0.3", "@octokit/types@^6.13.0", "@octokit/types@^6.16.1", "@octokit/types@^6.28.1":
+"@octokit/types@^6.0.3", "@octokit/types@^6.16.1", "@octokit/types@^6.28.1":
   version "6.28.1"
   resolved "https://registry.npmjs.org/@octokit/types/-/types-6.28.1.tgz#ab990d1fe952226055e81c7650480e6bacfb877c"
   integrity sha512-XlxDoQLFO5JnFZgKVQTYTvXRsQFfr/GwDUU108NJ9R5yFPkA2qXhTJjYuul3vE4eLXP40FA2nysOu2zd6boE+w==
   dependencies:
     "@octokit/openapi-types" "^10.2.2"
-
-"@types/js-yaml@^4.0.0":
-  version "4.0.3"
-  resolved "https://registry.npmjs.org/@types/js-yaml/-/js-yaml-4.0.3.tgz#9f33cd6fbf0d5ec575dc8c8fc69c7fec1b4eb200"
-  integrity sha512-5t9BhoORasuF5uCPr+d5/hdB++zRFUTMIZOzbNkr+jZh3yQht4HYbRDyj9fY8n2TZT30iW9huzav73x4NikqWg==
 
 "@types/json-schema@^7.0.7":
   version "7.0.9"
@@ -356,10 +351,10 @@
   resolved "https://registry.npmjs.org/@types/mustache/-/mustache-4.1.2.tgz#d0e158013c81674a5b6d8780bc3fe234e1804eaf"
   integrity sha512-c4OVMMcyodKQ9dpwBwh3ofK9P6U9ZktKU9S+p33UqwMNN1vlv2P0zJZUScTshnx7OEoIIRcCFNQ904sYxZz8kg==
 
-"@types/node@^16.9.1":
-  version "16.9.1"
-  resolved "https://registry.npmjs.org/@types/node/-/node-16.9.1.tgz#0611b37db4246c937feef529ddcc018cf8e35708"
-  integrity sha512-QpLcX9ZSsq3YYUUnD3nFDY8H7wctAhQj/TFKL8Ya8v5fMm3CFXxo8zStsLAl780ltoYoo1WvKUVGBQK+1ifr7g==
+"@types/node@^16.9.2":
+  version "16.9.2"
+  resolved "https://registry.npmjs.org/@types/node/-/node-16.9.2.tgz#81f5a039d6ed1941f8cc57506c74e7c2b8fc64b9"
+  integrity sha512-ZHty/hKoOLZvSz6BtP1g7tc7nUeJhoCf3flLjh8ZEv1vFKBWHXcnMbJMyN/pftSljNyy0kNW/UqI3DccnBnZ8w==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -370,11 +365,6 @@
   version "4.0.0"
   resolved "https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
-
-"@types/uuid@^8.3.0":
-  version "8.3.1"
-  resolved "https://registry.npmjs.org/@types/uuid/-/uuid-8.3.1.tgz#1a32969cf8f0364b3d8c8af9cc3555b7805df14f"
-  integrity sha512-Y2mHTRAbqfFkpjldbkHGY8JIzRN6XqYRliG8/24FcHm2D2PwW24fl5xMRTVGdrb7iMrwCaIEbLWerGIkXuFWVg==
 
 "@typescript-eslint/eslint-plugin@^4.18.0":
   version "4.31.1"
@@ -2282,10 +2272,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.1.2:
-  version "2.4.0"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-2.4.0.tgz#85bdfe0f70c3e777cf13a4ffff39713ca6f64cba"
-  integrity sha512-DsEPLY1dE5HF3BxCRBmD4uYZ+5DCbvatnolqTqcxEgKVZnL2kUfyu7b8pPQ5+hTBkdhU9SLUmK0/pHb07RE4WQ==
+prettier@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
+  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
 
 pretty-quick@^3.0.2:
   version "3.1.1"

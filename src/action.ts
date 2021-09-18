@@ -1,6 +1,7 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
 import mustache from 'mustache'
+import { Octokit } from './octokit'
 import { Util } from './util'
 
 export namespace Action {
@@ -55,8 +56,8 @@ export namespace Action {
         body = issue.body + (body ? `\n\n${body}` : '')
       }
 
-      const octokit = Util.getOctokit()
-      await octokit.issues.create({
+      const octokit = Octokit.get()
+      await octokit.rest.issues.create({
         ...context.repo,
         body,
         title: issue.title,
