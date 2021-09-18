@@ -6,9 +6,9 @@ import { Util } from './util'
 export namespace Action {
   export async function run() {
     try {
-      const context = github.context
-      const issue = context.payload.issue
-      const comment = context.payload.comment
+      const { context } = github
+      const { issue } = context.payload
+      const { comment } = context.payload
 
       if (
         !Util.isValidEvent('issue_comment', 'created') ||

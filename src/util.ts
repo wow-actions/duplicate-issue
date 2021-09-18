@@ -8,8 +8,8 @@ export namespace Util {
   }
 
   export function isValidEvent(event: string, action?: string) {
-    const context = github.context
-    const payload = context.payload
+    const { context } = github
+    const { payload } = context
     if (event === context.eventName) {
       return action == null || action === payload.action
     }
@@ -17,10 +17,12 @@ export namespace Util {
   }
 
   // https://regex101.com/r/3PkLfT/1
-  const TOKENISE_REGEX = /\S+="[^"\\]*(?:\\.[^"\\]*)*"|"[^"\\]*(?:\\.[^"\\]*)*"|\S+/g
+  const TOKENISE_REGEX =
+    /\S+="[^"\\]*(?:\\.[^"\\]*)*"|"[^"\\]*(?:\\.[^"\\]*)*"|\S+/g
   export function tokeniseCommand(command: string) {
     let matches
     const output: string[] = []
+    // eslint-disable-next-line no-cond-assign
     while ((matches = TOKENISE_REGEX.exec(command))) {
       output.push(matches[0])
     }
