@@ -1,4 +1,4 @@
-name: Duplicate Issue
+name: ✅　Duplicate Issue
 
 on:
   issue_comment:

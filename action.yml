@@ -1,5 +1,5 @@
 name: Duplicate Issue
-description: Create a full copy of issue with a single command.
+description: Creates a full copy of issue with a single command.
 author: bubkoo <bubkoo.wy@gmail.com>
 
 inputs:
@@ -25,4 +25,4 @@ runs:
 
 branding:
   icon: copy
-  color: purple # gray-dark purple red orange green blue yellow black white
+  color: orange

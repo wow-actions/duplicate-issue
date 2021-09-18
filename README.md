@@ -1,6 +1,6 @@
 # Duplicate Issue
 
-A GitHub Action to create a full copy of issue with a single command.
+> Creates a full copy of issue with a single command.
 
 Use the default `/duplicate` command to duplicate an issue:
 
@@ -23,7 +23,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: bubkoo/duplicate-issue@v1
+      - uses: wow-actions/duplicate-issue@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -36,4 +36,4 @@ jobs:
 
 ## License
 
-The scripts and documentation in this project are released under the [MIT License](LICENSE)
+The scripts and documentation in this project are released under the [MIT License](LICENSE).
