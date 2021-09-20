@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/wow-actions/duplicate-issue/compare/v1.0.0...v1.0.1) (2021-09-20)
+
+
+### Bug Fixes
+
+* typos ([30622a4](https://github.com/wow-actions/duplicate-issue/commit/30622a4e7802474e47063ba3b7819cf427a83ce7))
+
 # 1.0.0 (2021-09-18)
 
 
